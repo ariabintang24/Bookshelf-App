@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
+}
+
+body, input, button {
+    font-family: 'Poppins', sans-serif;
+}
+
+input, button {
+    font-size: 18px;
+}
+
+.header, footer {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #91C8E4;
+    color: #0C356A;
+}
+
+main {
+    max-width: 800px;
+    width: 80%;
+    margin: 10px auto;
+    padding: 16px;
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 20px;
+    background-color: #91C8E4;
+}
+
+.input_section > h2 {
+    text-align: center;
+    color: #0C356A;
+}
+
+.input_section > form > .input {
+    margin: 8px 0;
+}
+
+.input_section > form > button {
+    background-color: #0C356A;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.input_section > form > button > span {
+    font-weight: 650;
+}
+
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: white;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+.input_section > form > button:hover {
+    background-color: #176B87;
+}
+
+.input_section > form > .input > label {
+    color: #0C356A;
+    font-weight: 650;
+}
+
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+    color: #0C356A;
+    font-weight: 650;
+    margin-right: 10px;
+}
+
+.search_section {
+    margin: 16px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 20px;
+    background-color: #91C8E4;
+}
+
+.search_section > h2 {
+    text-align: center;
+    color: #0C356A;
+}
+
+.search_section > form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+.search_section > form > label {
+    display: flex;
+    align-items: center;
+}
+
+.search_section > form > input {
+    padding: 8px;
+    background: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    min-width: 100px;
+}
+
+.search_section > form > button {
+    background-color: #0C356A;
+    color: white;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.search_section > form > button:hover {
+    background-color: #176B87;
+}
+
+.book_shelf {
+    margin: 16px 0 0;
+    padding: 16px;
+    border-radius: 20px;
+    background-color: #91C8E4;
+}
+
+.book_shelf > h2 {
+    text-align: center;
+    color: #0C356A;
+}
+
+.book_shelf > .book_list {
+    padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+    padding: 8px 16px 16px;
+    border-radius: 20px;
+    margin: 10px 0;
+    box-shadow: 0 5px 10px black;
+}
+
+.book_shelf > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.book_shelf > .book_list > .book_item > .action > .green {
+    background: #58e481;
+    color: white;
+    padding: 10px;
+}
+
+.book_shelf > .book_list > .book_item > .action > .green:hover {
+    background: #127c56;
+}
+
+.book_shelf > .book_list > .book_item > .action > .red {
+    background: #d84545;
+    color: white;
+    padding: 10px;
+}
+
+.book_shelf > .book_list > .book_item > .action > .red:hover {
+    background: #7b3030;
+}
+
+@media screen and (min-width: 1025px) {
+    main {
+        min-width: 1430px;
+        display: flex;
+    }
+    .book_shelf {
+        margin: 0 0 16px;
+        border: 2px solid white;
+        padding: 16px;
+        border-radius: 20px;
+    }
+    .row-1 {
+        flex-basis: 40%;
+        margin-right: 30px;
+    }
+    .row-2 {
+        flex-basis: 30%;
+        margin-right: 30px;
+    }
+    .row-3 {
+        flex-basis: 30%;
+    }
+
+    .book_shelf > .book_list > .book_item > .action > .green {
+        margin-bottom: 10px;
+    }
+}
